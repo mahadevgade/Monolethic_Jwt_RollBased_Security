@@ -1,4 +1,4 @@
-package com.MySociety.Service;
+package com.MySociety.Security.service;
 
 import com.MySociety.Security.Repository.UserRepository;
 import com.MySociety.Security.config.AuthenticationResponse;
@@ -38,7 +38,6 @@ public class AuthenticationService
 
         user.setFirstname(req.getFirstname());
         user.setLastName(req.getLastName());
-        user.setMobileNumber(req.getMobileNumber());
         user.setUserName(req.getUsername());
         System.out.println("password is" + req.getPassword());
         user.setPassword(passwordEncoder.encode(req.getPassword()));

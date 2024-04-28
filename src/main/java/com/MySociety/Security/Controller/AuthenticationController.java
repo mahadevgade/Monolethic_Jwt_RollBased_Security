@@ -1,8 +1,8 @@
-package com.MySociety.Controller;
+package com.MySociety.Security.Controller;
 
 import com.MySociety.Security.config.AuthenticationResponse;
 import com.MySociety.Security.model.User;
-import com.MySociety.Service.AuthenticationService;
+import com.MySociety.Security.service.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

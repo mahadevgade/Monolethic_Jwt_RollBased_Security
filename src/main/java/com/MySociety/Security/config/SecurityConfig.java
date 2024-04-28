@@ -35,8 +35,9 @@ public class SecurityConfig {
                         req -> req.requestMatchers("/login/**" , "/register/**")
                                 .permitAll()
 
+                                //role based access to APi
                                 .requestMatchers("/admin/**").hasAuthority("ADMIN")
-                                .requestMatchers("/user/**").hasAuthority("MANAGER")
+
 
                                 .anyRequest()
                                 .authenticated()

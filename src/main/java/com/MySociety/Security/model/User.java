@@ -36,9 +36,6 @@ public class User implements UserDetails
     @Column(name = "Password")
     private String password;
 
-    @Column(name = "Mobile Number")
-    private long mobileNumber;
-
     @Enumerated(value = EnumType.STRING)
     private Role role;
 
