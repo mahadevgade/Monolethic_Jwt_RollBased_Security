@@ -36,7 +36,7 @@ public class SecurityConfig {
                                 .permitAll()
 
                                 //role based access to APi
-                                .requestMatchers("/admin/**").hasAuthority("ADMIN")
+                                .requestMatchers("/Owner/**").hasAuthority("OWNER")
 
 
                                 .anyRequest()
