@@ -4,9 +4,9 @@ spring:
 
   # Database Configuration
   datasource:
-    url: jdbc:mysql://localhost:3306/mysocietyowner
+    url: jdbc:mysql://localhost:3306/mysociety
     username: root
-    password: root
+    password: mahadev7041
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
